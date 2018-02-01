@@ -5,38 +5,39 @@
 
     <!-- Bootstrap and CSS here-->
     <link rel="stylesheet" type='text/css' href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   </head>
-  <body>
+  <body class='container'>
 
       <div id='app' class='center'>
 
         <div id='headers'>
-          <h1>Guesing Game!</h1>
+          <h1>Guessing Game!</h1>
           <h2>Guess a Number Between 1 and 100</h2>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
-            <input type="text" placeholder="Enter Next Guess Here">
-            <button>Submit</button>
+            <input id='player-input' class='center' placeholder="#" maxlength = '3' autofocus=autofocus>
+            <button id='submit' type='button' class='btn btn-success'>Go</button>
 
           </div>
 
-          <div id='guesses'>
-            <table>
-              <ul>
-                <li>Guess1</li>
-                <li>Guess2</li>
-                <li>Guess3</li>
-                <li>Guess4</li>
-                <li>Guess5</li>
-              </ul>
+          <div id='guesses' class='guess'>
+            <div class='row'>
+                <ul>
+                  <li id='guess1'>Guess1</li>
+                  <li id='guess2'>Guess2</li>
+                  <li id='guess3'>Guess3</li>
+                  <li id='guess4'>Guess4</li>
+                  <li id='guess5'>Guess5</li>
+                </ul>
           </div>
 
           <div id="menu-btns">
-            <button>Reset</button>
-            <button>Hint</button>
+            <button type='button' class='btn btn-danger'>Reset</button>
+            <button type='button' class='btn btn-info'>Hint</button>
           </div>
         </div>
       </div>
@@ -44,21 +45,20 @@
 
 
     <div id='footer'>
-        <div>
-          <div class=''>
+        <div class='row'>
+          <div class='col-sm-4'>
             <img src='fullstack_logo.png'></img>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <h4>Project by NICK ANGELOS</h4>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='grace_hopper.png'></img>
           </div>
-
-
         </div>
+
     </div>
 
   </body>
